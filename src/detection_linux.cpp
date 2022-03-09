@@ -56,7 +56,6 @@ static bool isRunning = false;
 /**********************************
  * Local Helper Functions protoypes
  **********************************/
-static void BuildInitialDeviceList();
 
 static void WaitForDeviceHandled();
 static void SignalDeviceHandled();

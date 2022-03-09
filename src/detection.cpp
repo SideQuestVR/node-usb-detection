@@ -118,6 +118,8 @@ void Find(const Nan::FunctionCallbackInfo<v8::Value>& args) {
 	if (args.Length() == 0) {
 		return Nan::ThrowTypeError("First argument must be a function");
 	}
+	ClearList();
+	BuildInitialDeviceList();
 
 	if (args.Length() == 3) {
 		if (args[0]->IsNumber() && args[1]->IsNumber()) {

@@ -95,7 +95,6 @@ void UpdateDevice(PDEV_BROADCAST_DEVICEINTERFACE pDevInf, WPARAM wParam, DeviceS
 std::string Utf8Encode(const std::string &str);
 DWORD WINAPI ListenerThread(LPVOID lpParam);
 
-void BuildInitialDeviceList();
 
 void cbWork(uv_work_t* req);
 void cbAfter(uv_work_t* req);

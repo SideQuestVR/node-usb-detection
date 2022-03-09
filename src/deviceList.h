@@ -59,5 +59,5 @@ bool IsItemAlreadyStored(char* identifier);
 DeviceItem_t* GetItemFromList(char* key);
 ListResultItem_t* CopyElement(ListResultItem_t* item);
 void CreateFilteredList(std::list<ListResultItem_t*>* filteredList, int vid, int pid);
-
+void ClearList();
 #endif

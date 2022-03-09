@@ -73,3 +73,12 @@ void CreateFilteredList(list<ListResultItem_t*> *filteredList, int vid, int pid)
 
     }
 }
+
+void ClearList() {
+	for (auto it = deviceMap.cbegin(); it != deviceMap.cend();)
+	{
+		DeviceItem_t* item = it->second;
+		deviceMap.erase(it++);
+		delete item;    
+	}
+}

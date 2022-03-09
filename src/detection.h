@@ -22,7 +22,7 @@ void StartMonitoring(const Nan::FunctionCallbackInfo<v8::Value>& args);
 void Start();
 void StopMonitoring(const Nan::FunctionCallbackInfo<v8::Value>& args);
 void Stop();
-
+void BuildInitialDeviceList();
 
 struct ListBaton {
 	public:
