@@ -481,6 +481,6 @@ static void cbTerminate(uv_signal_t *handle, int signum) {
 	Stop();
 }
 
-static void BuildInitialDeviceList() {
-	
+void BuildInitialDeviceList() {
+
 }
