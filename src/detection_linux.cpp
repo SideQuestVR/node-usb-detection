@@ -272,7 +272,8 @@ static void cbTerminate(uv_signal_t *handle, int signum) {
 }
 
 
-static void BuildInitialDeviceList() {
+void BuildInitialDeviceList() {
+	ClearList();
 	/* Create a list of the devices */
 	enumerate = udev_enumerate_new(udev);
 	udev_enumerate_scan_devices(enumerate);

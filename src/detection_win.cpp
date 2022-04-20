@@ -374,6 +374,7 @@ DWORD WINAPI ListenerThread( LPVOID lpParam ) {
 
 
 void BuildInitialDeviceList() {
+	ClearList();
 	DWORD dwFlag = (DIGCF_ALLCLASSES | DIGCF_PRESENT);
 	HDEVINFO hDevInfo = DllSetupDiGetClassDevs(NULL, "USB", NULL, dwFlag);
 
