@@ -214,8 +214,8 @@ void StopMonitoring(const Nan::FunctionCallbackInfo<v8::Value>& args) {
 	Stop();
 }
 
-extern "C" {
-	void init (v8::Local<v8::Object> target) {
+//extern "C" {
+    NAN_MODULE_INIT(Init) {
 		Nan::SetMethod(target, "find", Find);
 		Nan::SetMethod(target, "registerAdded", RegisterAdded);
 		Nan::SetMethod(target, "registerRemoved", RegisterRemoved);
@@ -223,6 +223,7 @@ extern "C" {
 		Nan::SetMethod(target, "stopMonitoring", StopMonitoring);
 		InitDetection();
 	}
-}
+//}
 
-NODE_MODULE(detection, init);
+
+NAN_MODULE_WORKER_ENABLED(detection, Init);
