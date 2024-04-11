@@ -44,16 +44,16 @@
   "dependencies": {
     "bindings": "^1.5.0",
     "eventemitter2": "^5.0.1",
-    "nan": "^2.15.0",
-    "prebuild-install": "^6.1.4"
+    "nan": "latest",
+    "prebuild-install": "latest"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "chalk": "^2.4.1",
     "eslint": "^4.19.1",
     "jasmine": "^3.1.0",
-    "node-abi": "^3.1.0",
-    "node-gyp": "^8.2.0",
-    "prebuild": "^11.0.0"
+    "node-abi": "latest",
+    "node-gyp": "latest",
+    "prebuild": "latest"
   }
 }
